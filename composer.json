@@ -12,20 +12,13 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=7.4",
-    "eufony/inflector": "^1.0"
-  },
-  "require-dev": {
+    "eufony/inflector": "^1.0",
     "phpunit/phpunit": "^9.5"
   },
   "autoload": {
     "psr-4": {
       "Eufony\\Inflector\\Tests\\": [ "src/" ]
     }
-  },
-  "scripts": {
-    "test": [
-      "phpunit -c src/phpunit.xml.dist"
-    ]
   },
   "config": {
     "optimize-autoloader": true,
