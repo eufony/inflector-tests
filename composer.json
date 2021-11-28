@@ -1,0 +1,35 @@
+{
+  "name": "eufony/inflector-tests",
+  "description": "Unit tests for inflection implementations.",
+  "keywords": [ "eufony", "inflector", "inflection", "testsuite" ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alpin Gencer",
+      "email": "alpingencer@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.4",
+    "eufony/inflector": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Eufony\\Inflector\\Tests\\": [ "src/" ]
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpunit -c src/phpunit.xml.dist"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}
